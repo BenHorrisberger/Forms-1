@@ -1,0 +1,9 @@
+<div id="results"></div>
+  <button><a href="./index.html">Back to Form</a></button>
+  <script>
+    const resultsList = document.getElementById("results");        
+    new URLSearchParams(window.location.search).forEach((value, name) => {
+     resultsList.append(`${name}: ${value}`);
+     resultsList.append(document.createElement("br"));
+     });
+   </script>
